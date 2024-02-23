@@ -65,12 +65,7 @@ main hr {
 .secondSection h1 {
   font-size: 1.8rem;
 }
-.purple {
-  color: rgb(124, 37, 206);
-}
-.text-gray {
-  color: gray;
-}
+
 .secondSection .box {
   background: white;
   height: 2px;
@@ -111,6 +106,65 @@ main hr {
     margin: 30px;
     margin-left: -80px;
     width: 280px;
-    color:rgb(129, 119, 119);
+    color:rgb(163, 151, 151);
     font-size:0.8rem
+}
+
+footer{
+  background-color: rgb(19, 19, 30);
+  
+
+}
+.footer{
+  padding:20px;
+  display:flex;
+  justify-content:space-around;
+}
+.footer ul{
+  list-style: none;
+  
+}
+.footer ul li a{
+  text-decoration: none;
+  color:rgb(189, 171, 171);
+}
+.footer > div{
+  width:250px;
+}
+
+.footer .footerFirst span{
+  font-size: 1.5rem;
+}
+.footer .footerSecond li:hover{
+  font-size:1.02rem;
+}
+.footer .footerThird{
+  display:flex;
+  align-items: center;
+  margin-left:-250px;
+
+}
+.footer .footerThird ul{
+  display:flex;
+}
+.footer .footerThird ul li{
+ margin-left: 50px;
+ font-size: 2rem;
+}
+
+.footer .footerThird ul li:hover{
+  font-size:2.02rem;
+  cursor: pointer;
+ }
+footer .footerFourth{
+  text-align:center;
+  color:rgb(221, 206, 206);
+  padding:10px 0;
+  font-size:0.8rem;
+}
+.purple {
+  color: rgb(124, 37, 206);
+}
+.text-gray {
+  color: rgb(189, 171, 171);
 }

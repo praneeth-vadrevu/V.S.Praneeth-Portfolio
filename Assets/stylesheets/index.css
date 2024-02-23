@@ -1,6 +1,7 @@
 * {
   margin: 0px;
   padding: 0px;
+  box-sizing: border-box;
 }
 body {
   background-color: rgb(1, 1, 36);
@@ -43,21 +44,21 @@ nav ul li a:hover {
 }
 .leftSection {
   font-size: 2.5rem;
-  
+
   /* background-color: red;; */
 }
-.leftSection .btn{
+.leftSection .btn {
   background-color: #31315f;
-    color: white;
-    border: 2px solid white;
-    font-size: 1.5rem;
-    border-radius: 7px;
-    padding: 5px;
-    margin-left:10px;
+  color: white;
+  border: 2px solid white;
+  font-size: 1.5rem;
+  border-radius: 7px;
+  padding: 5px;
+  margin-left: 10px;
 }
-.leftSection .btn:hover{
-  font-size:1.53rem;
-  cursor:pointer;
+.leftSection .btn:hover {
+  font-size: 1.53rem;
+  cursor: pointer;
 }
 .rightSection img {
   width: 80%;
@@ -93,7 +94,7 @@ main hr {
   background-color: white;
   width: 2px;
   height: 75px;
-  margin-left:40px;
+  margin-left: 40px;
 }
 .secondSection .vertical-image {
   width: 180px;
@@ -102,79 +103,149 @@ main hr {
   left: -87px;
 }
 .secondSection .vertical-image1 {
-    width: 180px;
-    height:65px;
-    position: relative;
-    top: -79px;
-    left: -87px;
-  }
+  width: 180px;
+  height: 65px;
+  position: relative;
+  top: -79px;
+  left: -87px;
+}
 
 .secondSection .vertical-title {
-    position: relative;
-    top: 15px;
-    font-size: 1.3rem;
-    width: 250px;
-    margin-left: -80px;
+  position: relative;
+  top: 15px;
+  font-size: 1.3rem;
+  width: 250px;
+  margin-left: -80px;
 }
 .secondSection .vertical-desc {
-    margin: 30px;
-    margin-left: -80px;
-    width: 280px;
-    color:rgb(163, 151, 151);
-    font-size:0.8rem
+  margin: 30px;
+  margin-left: -80px;
+  width: 280px;
+  color: rgb(163, 151, 151);
+  font-size: 0.8rem;
+}
+.thirdSection {
+  margin: 20px 60px;
+
+  height: auto;
+}
+.thirdSection-box {
+  display: flex;
+  justify-content: space-around;
+  /* background-color:red; */
+}
+.thirdSection-box > div {
+  width: 40%;
+}
+.thirdSection-box img {
+  width: 90%;
+  border-radius: 16px;
+  border: 3px solid white;
+}
+.thirdSection-left img:hover {
+  width: 90.1%;
+}
+.thirdSection-right h1 {
+  text-align: center;
+  font-size: 2rem;
+}
+.thirdSection .text {
+  margin: 10px 10px;
+  font-size: 1.07rem;
+}
+.thirdSection .text ul li {
+  margin: 15px 0;
+}
+.thirdSection .text ul li:hover {
+  font-size: 1.08rem;
+}
+.contact {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 80px;
+}
+.contact > div {
+  width: 30%;
 }
 
-footer{
+.contact-left h1 {
+  font-size: 3rem;
+}
+.contact-left-text{
+  color:rgb(124, 37, 206);
+  margin : 20px 20px;
+}
+form input , textarea{
+  width:100%;
+  margin:2px;
+  border:0px;
+  padding:10px;
+  border-radius: 9px;
+  background:gray;
+  color:white;
+}
+::placeholder{
+  color:lavender;
+}
+.contact-right .btn{
+  padding:5px;
+  margin-left:80px;
+  font-size:1.5rem;
+  
+}
+.contact-right .btn:hover{
+  background:pink;
+}
+
+/* -----------------------footer------------------------ */
+
+footer {
   background-color: rgb(19, 19, 30);
-  
-
 }
-.footer{
-  padding:20px;
-  display:flex;
-  justify-content:space-around;
+.footer {
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
 }
-.footer ul{
+.footer ul {
   list-style: none;
-  
 }
-.footer ul li a{
+.footer ul li a {
   text-decoration: none;
-  color:rgb(189, 171, 171);
+  color: rgb(189, 171, 171);
 }
-.footer > div{
-  width:250px;
+.footer > div {
+  width: 250px;
 }
 
-.footer .footerFirst span{
+.footer .footerFirst span {
   font-size: 1.5rem;
 }
-.footer .footerSecond li:hover{
-  font-size:1.02rem;
+.footer .footerSecond li:hover {
+  font-size: 1.02rem;
 }
-.footer .footerThird{
-  display:flex;
+.footer .footerThird {
+  display: flex;
   align-items: center;
-  margin-left:-250px;
+  margin-left: -250px;
+}
+.footer .footerThird ul {
+  display: flex;
+}
+.footer .footerThird ul li {
+  margin-left: 50px;
+  font-size: 2rem;
+}
 
-}
-.footer .footerThird ul{
-  display:flex;
-}
-.footer .footerThird ul li{
- margin-left: 50px;
- font-size: 2rem;
-}
-
-.footer .footerThird ul li:hover{
-  font-size:2.02rem;
+.footer .footerThird ul li:hover {
+  font-size: 2.02rem;
   cursor: pointer;
- }
-footer .footerFourth{
-  text-align:center;
-  color:rgb(221, 206, 206);
-  padding:10px 0;
-  font-size:0.8rem;
+}
+footer .footerFourth {
+  text-align: center;
+  color: rgb(221, 206, 206);
+  padding: 10px 0;
+  font-size: 0.8rem;
 }
 .purple {
   color: rgb(124, 37, 206);
